@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Bayon');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{ 
   display: flex;
-  flex-direction: column;
+  padding: 10% 8%;
+  margin-top: 5%;
+  height: 50em;
+}
+
+
+#describe {
+  width: 45%;
+  padding-top: 2%;
+  padding-left: 5%;
+  border-left: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid rgb(0, 0, 0);
+  height: 45em;
+  position: relative;
+}
+
+#block {
+  width: 15%;
+}
+
+#coin {
+  width: 45%;
+  height: 45em;
+  padding-top: 3%;
+  padding-right: 5%;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  position: relative;
+}
+
+#generate {
+  position: relative;
+  text-align: center;
+  width: 45%;
+  height: 45em;
+  padding-top: 2.5%;
+  padding-right: 5%;
+  border-right: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#coin_and_rank {
+  justify-content: space-around;
+
+}
+
+#coin_and_rank > *{
+  max-height: 55px;
+  margin-right: 25px;
+}
+
+#coin_image {
+  height: 75px
+}
+
+body {
+  background-image: linear-gradient(to bottom right, rgb(188, 209, 240), rgba(0, 255, 174, 0.46));
+  font-family: 'Bayon';
+  width: 100%
+}
+
+.text {
+  font-size: large;
+  overflow-y: auto;
+  max-height: 22em;
+  max-width: 90%;
+}
+
+#description{
+  margin-top: 0px;
+  max-height: 10em;
+  max-width: 375px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#reset {
+  position: absolute;
+  right: 11%;
+  bottom: 5%;
+  background-color:   rgb(180, 212, 240);
+  border-radius: 25%;
+  border: 1px dotted rgba(73, 65, 38, 0.585);
+  width: 80%;
+  height: 10%;
+  font-family: 'Bayon';
+  font-size: large;
+}
+
+#logo {
+  height: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#generate_inside{
+  text-align: left;
+  font-size: large;
+}
+
+#rank_mean {
+  margin: 15% 0%;
+}
+
+#generate_button {
+  background-color:   rgb(180, 212, 240);
+  border-radius: 25%;
+  border: 1px dotted rgba(73, 65, 38, 0.585);
+  width: 80%;
+  height: 10%;
+  font-size: large;
+  bottom: 8%;
+  left: 10%;
+  position: absolute;
+  font-family: 'Bayon';
+}
+
+#generate_inside > select{
+  font-family: 'Bayon';
+  text-align: center;
+  font-size: large;
+  margin-left: 8%;
+  /* width: 10em; */
+}
+
+
+#helpful_links {
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+#exchange_list{
+  display: flex;
+  margin: 5% 12%;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.exchanges{
+  margin-right: 2em;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.exchanges > a > img {
+  height: 110px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.exchanges > a > p {
+  font-size: larger;
+  text-decoration: none;
+}
+
+#go_to_helpful_links {
+  height: 3em;
+  position: absolute;
+  top: -0.5em;
+  right: 5%;
+  font-size: larger;
+  font-weight: bold;
+
+}
+
+#go_to_helpful_links:hover {
+  cursor: pointer;
+  color: aquamarine;
+}
+
+#coin_link {
+  overflow-x: hidden;
 }
